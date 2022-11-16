@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <style>
+        .button{
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-decoration: none;
+            cursor:pointer;
+            width:97% ;
+            border-radius: 4px;
+
+        }
+        .button2{
+            background-color:white ;
+            border-color: black;
+            color: black;
+            padding: 10px 32px;
+            text-decoration: none;
+            cursor: pointer;
+            width: 97%;
+            font-size: 16px;
+            border-radius: 4px;
+         }
+        .center {
+            position: absolute;
+            top: 21%;
+            left: 40%;
+            margin: auto;
+            width: 20%;
+            border: 3px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+        .text{
+            font-size: 18px;
+        }
+       
+        
+    </style>
+    <body>
+        <form name="myform" method="post">
+        <div class="center">
+        <center><h1><b>Login</b></h1></center>
+        <b><center><label><b>Mobile Number:</b></label><input type="number" id="number" name="+91|phone"placeholder="+91 | phone"></center><br></b> 
+        <center><button onclick="validateform()"class="button">One Time Password</button></center>
+       <center><p><b>or</b></p></center>
+       <center><button class="button2">Continue with Email</button></center><br>
+       <center><button class="button2">Continue with Google</button></center><br>
+       <center><p class="text">New to Zomato?</p>
+        <a class="active"
+        href="signup_in.html">Create account</a></center><br>
+        <center><a class="active"
+        href="index.html"><b>BACK</b></a></center>
+        </div>
+    </form>
+        <script>
+            function validateform()
+             {
+                var number = document.myform.number.value;
+                if(number == null || number == "")
+                {
+                    alert("Please enter phone number");
+                }
+                }
+         </script>
+       
+    </body>
+</html>
